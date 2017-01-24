@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 class QPaintEvent;
+class QMouseEvent;
 namespace Ui {
 class MainWindow;
 }
@@ -17,7 +18,7 @@ public:
 
 protected:
     void paintEvent(QPaintEvent *e);
-
+    void mousePressEvent(QMouseEvent *e);
 private:
     Ui::MainWindow *ui;
 };
